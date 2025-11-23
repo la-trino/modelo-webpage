@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Título del reportaje – Nombre del medio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- CABECERA DEL SITIO -->
+  <header class="site-header">
+    <div class="site-header__logo">Mi Medio</div>
+    <nav class="site-header__nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#historia">Historia</a>
+      <a href="#galeria">Galería</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <!-- HERO / PORTADA -->
+    <section class="hero">
+      <div class="hero__content">
+        <p class="hero__kicker">Etiqueta / Tema</p>
+
+        <h1 class="hero__title">
+          Título del artículo en dos líneas máximo
+        </h1>
+
+        <p class="hero__dek">
+          Subtítulo o bajada donde resumes en 2–3 frases el foco de la nota.
+          Aquí puedes explicar por qué esta historia importa.
+        </p>
+
+        <p class="hero__meta">
+          Por <span class="hero__author">Tu Nombre</span> ·
+          <time datetime="2025-11-23">23 de noviembre de 2025</time>
+        </p>
+      </div>
+    </section>
+
+    <!-- ENTRADA / CONTEXTO INICIAL -->
+    <section class="prologue">
+      <p>
+        Primer párrafo de entrada. Aquí puedes enganchar al lector con una
+        escena, un dato llamativo o una cita breve.
+      </p>
+      <p>
+        Segundo párrafo de contexto general antes de pasar al relato más
+        visual o a los gráficos.
+      </p>
+    </section>
+
+    <!-- SECCIÓN SCROLLYTELLING (AL ESTILO PUDDING) -->
+    <!-- Gráfico sticky a la izquierda, pasos de texto a la derecha -->
+    <section id="historia" class="story">
+      <!-- Columna del gráfico / visual principal -->
+      <div class="story__graphic">
+        <div class="story__graphic-inner">
+          <p class="story__graphic-label">Gráfico / mapa / visual principal</p>
+
+          <!-- AQUÍ LUEGO PUEDES METER UN SVG, CANVAS, IFRAME, ETC. -->
+          <div class="chart-placeholder">
+            <p>
+              Reemplaza este bloque con tu gráfico, mapa o visualización
+              interactiva.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna de pasos de texto que acompañan el gráfico -->
+      <div class="story__steps">
+        <article class="step is-active">
+          <h2 class="step__title">Sección 1: titular corto</h2>
+          <p class="step__text">
+            Texto que corresponde al primer estado del gráfico. Mantén esta
+            parte breve (4–6 líneas) para que el scroll se sienta ágil.
+          </p>
+        </article>
+
+        <article class="step">
+          <h2 class="step__title">Sección 2: cambia el foco</h2>
+          <p class="step__text">
+            Explica otro ángulo de la historia. Más adelante puedes conectar
+            este paso con un cambio en el gráfico (por ejemplo, mostrar
+            otra serie de datos).
+          </p>
+        </article>
+
+        <article class="step">
+          <h2 class="step__title">Sección 3: consecuencia o giro</h2>
+          <p class="step__text">
+            Cierra esta parte visual de la historia. Después puedes seguir
+            con texto tradicional, más gráficos o una entrevista.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- TEXTO CORRIDO TRADICIONAL -->
+    <section class="body-text">
+      <h2>Subtítulo clásico de sección</h2>
+      <p>
+        Más texto corrido, entrevistas, cifras, análisis, etc. Esta parte
+        funciona como un artículo más tradicional, sin necesidad de
+        animaciones.
+      </p>
+      <p>
+        Aquí puedes extenderte todo lo que quieras. Usa <strong>&lt;h2&gt;</strong> y
+        <strong>&lt;h3&gt;</strong> para marcar subtítulos y organizar bien la lectura.
+      </p>
+    </section>
+
+    <!-- GALERÍA DE IMÁGENES -->
+    <section id="galeria" class="gallery">
+      <h2 class="gallery__title">Galería de imágenes</h2>
+      <p class="gallery__intro">
+        Puedes usar esta sección para mostrar una selección de fotos, mapas o
+        gráficos complementarios.
+      </p>
+
+      <div class="gallery__grid">
+        <figure class="gallery__item">
+          <img src="https://placehold.co/800x600" alt="Descripción de la foto 1" />
+          <figcaption>Epígrafe o crédito de la imagen 1.</figcaption>
+        </figure>
+
+        <figure class="gallery__item">
+          <img src="https://placehold.co/800x600" alt="Descripción de la foto 2" />
+          <figcaption>Epígrafe o crédito de la imagen 2.</figcaption>
+        </figure>
+
+        <figure class="gallery__item">
+          <img src="https://placehold.co/800x600" alt="Descripción de la foto 3" />
+          <figcaption>Epígrafe o crédito de la imagen 3.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© 2025 Mi Medio. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
